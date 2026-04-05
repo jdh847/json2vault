@@ -9,9 +9,7 @@ def adapt(data: dict) -> NoteCollection:
     """
     Convert XHS favorites JSON to universal schema.
 
-    Supports two formats:
-    1. Bookmarklet export (has xsec_token, display_title)
-    2. Full fetched data (has desc, images, tags, interactInfo)
+    Supports multiple export formats with varying field names.
     """
     raw_notes = data.get("notes", [])
     if isinstance(data, list):
@@ -21,7 +19,7 @@ def adapt(data: dict) -> NoteCollection:
     for n in raw_notes:
         note_id = n.get("note_id") or n.get("noteId") or n.get("id", "")
 
-        # Handle both bookmarklet (display_title) and fetched (title) formats
+        # Title: try common field names
         title = n.get("title") or n.get("display_title") or n.get("displayTitle") or ""
         content = n.get("desc") or n.get("content") or n.get("description") or ""
 

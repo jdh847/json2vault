@@ -46,7 +46,7 @@ def detect_adapter(data: dict) -> Optional[str]:
     if data.get("source") == "xiaohongshu_favorites":
         return "xhs"
     if isinstance(data.get("notes"), list) and any(
-        "xsec_token" in n for n in data["notes"][:5]
+        "note_id" in n or "display_title" in n for n in data["notes"][:5]
     ):
         return "xhs"
 
