@@ -1,0 +1,31 @@
+{
+  "source": "my_bookmarks",
+  "notes": [
+    {
+      "id": "1",
+      "title": "How to Build a Second Brain",
+      "content": "Tiago Forte's method for organizing digital information using the PARA system: Projects, Areas, Resources, Archives.",
+      "author": "Tiago Forte",
+      "date": "2024-03-15",
+      "url": "https://example.com/second-brain",
+      "tags": ["productivity", "knowledge-management", "note-taking"]
+    },
+    {
+      "id": "2",
+      "title": "The Feynman Technique",
+      "content": "Learn anything by explaining it simply. Four steps: choose a concept, teach it to a child, identify gaps, simplify and use analogies.",
+      "author": "Richard Feynman",
+      "date": "2024-05-20",
+      "url": "https://example.com/feynman",
+      "tags": ["learning", "education", "mental-models"]
+    },
+    {
+      "id": "3",
+      "title": "Obsidian Graph View Tips",
+      "content": "Use tags consistently, create MOCs (Maps of Content), link liberally between notes. The graph becomes useful after 200+ notes.",
+      "date": "2024-07-10",
+      "url": "https://example.com/obsidian-tips",
+      "tags": ["obsidian", "knowledge-management", "tools"]
+    }
+  ]
+}
