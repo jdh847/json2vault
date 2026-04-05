@@ -9,7 +9,7 @@ def adapt(data: dict) -> NoteCollection:
     """
     Convert Weibo export JSON to universal schema.
 
-    Supports common Weibo scraper output formats.
+    Supports common Weibo export/archive formats.
     """
     raw = data.get("statuses") or data.get("posts") or data.get("notes") or data.get("data", [])
     if isinstance(data, list):
